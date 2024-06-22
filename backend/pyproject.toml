@@ -8,6 +8,10 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = ">3.7"
 fastapi = "*"
+sqlalchemy = "*"
+asyncpg = "*"
+greenlet = "*"
+psycopg2 = "*"
 
 
 [build-system]

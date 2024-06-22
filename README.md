@@ -6,6 +6,7 @@
 2. Node.js
 3. Docker and Docker Compose
 4. [Poetry](https://python-poetry.org/docs/#installation)
+5. Postgres libpq header files (e.g. `apt install libpq-dev` on Ubuntu, `brew install postgresql` on macOS)
 
 ### First-Time Setup
 
