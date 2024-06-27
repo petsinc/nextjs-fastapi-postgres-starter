@@ -12,6 +12,7 @@ sqlalchemy = "*"
 asyncpg = "*"
 greenlet = "*"
 psycopg2 = "*"
+uvicorn = "*"
 
 
 [build-system]
