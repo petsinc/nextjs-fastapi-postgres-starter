@@ -1,7 +1,6 @@
-import Image from "next/image";
-
+import Chat from "./chat";
 type User = {
-  id: string;
+  id: number;
   name: string;
 };
 
@@ -12,10 +11,12 @@ export default async function Home() {
   const user: User = await fetch(`${apiUrl}/users/me`).then((res) =>
     res.json()
   );
+  const userId = user.id
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       Hello, {user.name}!
+      <Chat userId={userId}/>
     </main>
   );
 }
